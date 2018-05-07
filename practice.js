@@ -30,7 +30,7 @@ var finalGreeting = (name) => {return "Hello, " + name};
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
-var array = ["apples", "milk", "eggs", "bread"];
+var groceries = ["apples", "milk", "eggs", "bread"];
 
 //Write a function called doubleCheck that takes in an array
 //as a parameter.
@@ -38,7 +38,12 @@ var array = ["apples", "milk", "eggs", "bread"];
 //If the array does not contain "chocolate", add "chocolate".
 //doubleCheck should return the array.
 
-//Code Here
+function doubleCheck(groceries) {
+  if (groceries.indexOf("chocolate") === -1) {
+    groceries.push("chocolate");
+  };
+  return groceries;
+}
 
 //////////////////PROBLEM 5////////////////////
 
